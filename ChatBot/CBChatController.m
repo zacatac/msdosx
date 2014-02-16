@@ -8,6 +8,7 @@
 
 #import "CBChatController.h"
 #import "CBChatBot.h"
+#import "ZFChatBot.h"
 
 @implementation CBChatController
 
@@ -17,7 +18,7 @@
     return nil;
   }
   
-  bot = [[CBChatBot alloc] init]; // replace this with your chatbot class
+  bot = [[ZFChatBot alloc] init]; // replace this with your chatbot class
   [bot setChatController:self];
   
   return self;

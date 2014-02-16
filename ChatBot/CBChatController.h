@@ -9,11 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 @class CBChatBot;
+@class ZFChatBot;
 
 @interface CBChatController : NSObject {
   IBOutlet NSTextView *chatView;
   
-  CBChatBot *bot;
+  ZFChatBot *bot;
 }
 
 - (void)appendMessage:(NSString *)messageString fromScreenName:(NSString *)screenName withColor:(NSColor *)color;
