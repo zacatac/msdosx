@@ -12,6 +12,7 @@
 
 
 @implementation ASShip
+@synthesize shield;
 
 - (id)init
 {
@@ -36,7 +37,7 @@
     }
     
     if (k.shootPressed) {
-        if (!(bulletReadiness++ % 8)) {
+        if (!(bulletReadiness++ % 1)) {
             
             // create the bullet
             
@@ -47,11 +48,31 @@
             d.yVelocity = self.yVelocity + cos(rotation/180.*3.14159)*7;
             d.rotation = self.rotation;
             [self.view addDrawable:d];
-            
+            [d release];
         }
     } else {
         bulletReadiness = 0;
     }
+    
+    if (self.shield == nil &&
+        k.shieldPressed &&
+        !(shieldReadiness++ %10)){
+        shield = [[ASDrawable alloc] initWithImage:[NSImage imageNamed:@"shield"]];
+        //[shield release];
+    }
+    if (self.shield != nil &&
+        k.shieldPressed == false &&
+        !(shieldReadiness++ %10)){
+        self.shield = nil;
+    }
+    
+    [self.shield draw];
+}
+
+- (void) dealloc
+{
+    [shield release];
+    [super dealloc];
 }
 
 @end

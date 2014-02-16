@@ -11,6 +11,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BDE2E41118B1739B006FC1AC /* ASAsteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE2E41018B1739B006FC1AC /* ASAsteroid.m */; };
 		BFEAB5891070253A00F36357 /* ASView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEAB5881070253A00F36357 /* ASView.m */; };
 		BFEAB58C1070256500F36357 /* ASDrawable.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEAB58B1070256500F36357 /* ASDrawable.m */; };
 		BFEAB5A21070294E00F36357 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEAB5A11070294E00F36357 /* ship.png */; };
@@ -35,6 +36,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Asteroids-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Asteroids-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2E40F18B1739B006FC1AC /* ASAsteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAsteroid.h; sourceTree = "<group>"; };
+		BDE2E41018B1739B006FC1AC /* ASAsteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAsteroid.m; sourceTree = "<group>"; };
 		BFEAB5871070253A00F36357 /* ASView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASView.h; sourceTree = "<group>"; };
 		BFEAB5881070253A00F36357 /* ASView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASView.m; sourceTree = "<group>"; };
 		BFEAB58A1070256500F36357 /* ASDrawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDrawable.h; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				BFEAB64210702DE100F36357 /* ASShip.m */,
 				BFEAB83310705D2D00F36357 /* ASBullet.h */,
 				BFEAB83410705D2D00F36357 /* ASBullet.m */,
+				BDE2E40F18B1739B006FC1AC /* ASAsteroid.h */,
+				BDE2E41018B1739B006FC1AC /* ASAsteroid.m */,
 			);
 			name = "Special Drawables";
 			sourceTree = "<group>";
@@ -188,6 +193,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Asteroids" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -231,6 +238,7 @@
 				BFEAB5891070253A00F36357 /* ASView.m in Sources */,
 				BFEAB58C1070256500F36357 /* ASDrawable.m in Sources */,
 				BFEAB5D710702A2000F36357 /* ASKeyboard.m in Sources */,
+				BDE2E41118B1739B006FC1AC /* ASAsteroid.m in Sources */,
 				BFEAB64310702DE100F36357 /* ASShip.m in Sources */,
 				BFEAB83510705D2D00F36357 /* ASBullet.m in Sources */,
 			);

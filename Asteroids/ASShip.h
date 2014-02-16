@@ -11,6 +11,9 @@
 
 @interface ASShip : ASDrawable {
     int bulletReadiness;
+    int shieldReadiness;
 }
+
+@property (nonatomic, retain) ASDrawable *shield;
 
 @end

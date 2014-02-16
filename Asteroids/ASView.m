@@ -10,6 +10,7 @@
 #import "ASDrawable.h"
 #import "ASShip.h"
 #import "ASKeyboard.h"
+#import "ASAsteroid.h"
 
 @implementation ASView
 
@@ -23,7 +24,13 @@
     [self addDrawable:ship];
     [ship release];
     
-    // add more drawables here
+    ASAsteroid *asteroid = [[ASAsteroid alloc] initLarge];
+    asteroid.x = NSMidX(self.frame) + 150;
+    asteroid.y = NSMidY(self.frame) + 150;
+    asteroid.xVelocity = 1;
+    asteroid.yVelocity = 1;
+    [self addDrawable:asteroid];
+    [asteroid release];
     
     [NSTimer scheduledTimerWithTimeInterval:1./60. target:self selector:@selector(tick:) userInfo:nil repeats:YES];
 }
