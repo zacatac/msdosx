@@ -17,5 +17,5 @@
  Return a randomly chosen phrase from the words.plist file (which consists of uppercase letters and spaces only)
  */
 - (NSString *) getWord;
-
+- (id) initWithLevel: (NSString * ) level;
 @end

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD7E0ECC18C6A7BE00FA4117"
+               BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
                BuildableName = "Hangman.app"
                BlueprintName = "Hangman"
                ReferencedContainer = "container:Hangman.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD7E0EF018C6A7BE00FA4117"
+               BlueprintIdentifier = "BD1BF88218C74C8A00328741"
                BuildableName = "HangmanTests.xctest"
                BlueprintName = "HangmanTests"
                ReferencedContainer = "container:Hangman.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD7E0ECC18C6A7BE00FA4117"
+            BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
             BuildableName = "Hangman.app"
             BlueprintName = "Hangman"
             ReferencedContainer = "container:Hangman.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD7E0ECC18C6A7BE00FA4117"
+            BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
             BuildableName = "Hangman.app"
             BlueprintName = "Hangman"
             ReferencedContainer = "container:Hangman.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD7E0ECC18C6A7BE00FA4117"
+            BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
             BuildableName = "Hangman.app"
             BlueprintName = "Hangman"
             ReferencedContainer = "container:Hangman.xcodeproj">

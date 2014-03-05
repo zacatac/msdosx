@@ -11,9 +11,13 @@
 
 @implementation HangmanWords
 
-- (id) init {
+- (id) initWithLevel: (NSString *) level {
 	if ((self = [super init])) {
-		words = [[NSArray alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"words" ofType: @"plist"]];
+        if ([level isEqualToString:@"expert"]){
+            words = [[NSArray alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"expert_words" ofType: @"plist"]];
+        } else {
+            words = [[NSArray alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"words" ofType: @"plist"]];
+        }
 		
 		srand(time(NULL));
 	}
@@ -26,10 +30,5 @@
 	return [words objectAtIndex: index];
 }
 
-
-- (void) dealloc {
-	[words release];
-	[super dealloc];
-}
 
 @end
