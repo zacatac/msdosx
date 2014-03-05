@@ -11,7 +11,7 @@
 #import "HangmanModel.h"
 @class HangmanView;
 
-@implementation HangmanController;
+@implementation HangmanViewController;
 
 @synthesize _HangmanView;
 @synthesize _mainModel;
@@ -52,7 +52,6 @@
 {
     NSLog(@"%@'s title is now %@",sender,[sender currentTitle]);
     [self resetBoard:@"easy"];
-    
 }
 
 - (void) resetBoard: (NSString *) level
@@ -91,7 +90,10 @@
             BOOL updated =  [_mainModel updateBlanks:guess];
             if (!updated){
                 //another strike!!
+                NSLog(@"before increment: %i",[_mainModel getGuessCount]);
                 [_mainModel incrementCount];
+                NSLog(@"afterxr increment: %i",[_mainModel getGuessCount]);
+
                 [[_mainModel missed] addObject:guess];
                 NSLog(@"GUESS COUNT: %i", [_mainModel getGuessCount]);
                 if ([_mainModel getGuessCount] > 6){ //Check lose condition

@@ -10,7 +10,7 @@
 
 @interface HangmanModel : NSObject
 {
-@private unsigned int _guessCount;
+    @private unsigned int _guessCount;
     
 }
 @property(nonatomic, retain) NSString *chosenWord;

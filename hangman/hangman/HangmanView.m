@@ -24,9 +24,9 @@
 
 - (void) drawRect:(CGRect) dirtyRect
 {
+    
     unsigned int stage = [mainController getStage];
     NSString *imageString = [NSString stringWithFormat:@"hang_%d.gif",stage];
-    
     UIImage *image = [UIImage imageNamed:imageString];
     [hangmanImageView setImage:image];
     [guess_text becomeFirstResponder];

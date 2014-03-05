@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class HangmanController;
+@class HangmanViewController;
 
 @interface HangmanView : UIView
 @property (weak, nonatomic) IBOutlet UITextView  *blank_text;
@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *expertButton;
 @property (weak, nonatomic) IBOutlet UITextField *avgField;
 
-@property IBOutlet HangmanController *mainController;
+@property IBOutlet HangmanViewController *mainController;
 
 - (void) drawRect:(CGRect)rect;
 - (void) blankTextViews;
