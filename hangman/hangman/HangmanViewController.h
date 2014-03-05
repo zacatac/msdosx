@@ -11,7 +11,7 @@
 #import "HangmanView.h"
 
 
-@interface HangmanController : UIViewController
+@interface HangmanViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet  HangmanView *_HangmanView;
 @property(nonatomic, retain) HangmanModel *_mainModel;

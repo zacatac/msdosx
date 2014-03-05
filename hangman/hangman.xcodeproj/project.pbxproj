@@ -83,7 +83,7 @@
 		BD1BF8B218C74E6400328741 /* HangmanWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanWords.h; sourceTree = "<group>"; };
 		BD1BF8B318C74E6400328741 /* HangmanWords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanWords.m; sourceTree = "<group>"; };
 		BD1BF8B418C74E6400328741 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
-		BD1BF8B718C74EAC00328741 /* expert_words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = expert_words.plist; path = Words/expert_words.plist; sourceTree = "<group>"; };
+		BD1BF8B718C74EAC00328741 /* expert_words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = expert_words.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +149,9 @@
 				BD1BF87718C74C8A00328741 /* Main_iPad.storyboard */,
 				BD1BF87A18C74C8A00328741 /* HangmanViewController.h */,
 				BD1BF87B18C74C8A00328741 /* HangmanViewController.m */,
-				BD1BF89A18C74D7000328741 /* HangmanView.h */,
 				BD1BF89D18C74DAC00328741 /* HangmanModel.h */,
 				BD1BF89E18C74DAC00328741 /* HangmanModel.m */,
-				BD1BF8B718C74EAC00328741 /* expert_words.plist */,
+				BD1BF89A18C74D7000328741 /* HangmanView.h */,
 				BD1BF89B18C74D7000328741 /* HangmanView.m */,
 				BD1BF8B118C74E6400328741 /* Words */,
 				BD1BF87D18C74C8A00328741 /* Images.xcassets */,
@@ -164,7 +163,7 @@
 		BD1BF86918C74C8A00328741 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD1BF8A018C74E5000328741 /* HangmanImages */,
+				BD1BF8A018C74E5000328741 /* Resources */,
 				BD1BF86A18C74C8A00328741 /* Hangman-Info.plist */,
 				BD1BF86B18C74C8A00328741 /* InfoPlist.strings */,
 				BD1BF86E18C74C8A00328741 /* main.m */,
@@ -191,7 +190,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BD1BF8A018C74E5000328741 /* HangmanImages */ = {
+		BD1BF8A018C74E5000328741 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				BD1BF8A118C74E5000328741 /* hang_0.gif */,
@@ -203,6 +202,7 @@
 				BD1BF8A718C74E5000328741 /* hang_6.gif */,
 				BD1BF8A818C74E5000328741 /* hang_7.gif */,
 			);
+			name = Resources;
 			path = HangmanImages;
 			sourceTree = "<group>";
 		};
@@ -211,6 +211,7 @@
 			children = (
 				BD1BF8B218C74E6400328741 /* HangmanWords.h */,
 				BD1BF8B318C74E6400328741 /* HangmanWords.m */,
+				BD1BF8B718C74EAC00328741 /* expert_words.plist */,
 				BD1BF8B418C74E6400328741 /* words.plist */,
 			);
 			path = Words;
@@ -549,6 +550,7 @@
 				BD1BF89618C74C8A00328741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD1BF89718C74C8A00328741 /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +559,7 @@
 				BD1BF89918C74C8A00328741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
