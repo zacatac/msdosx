@@ -21,6 +21,7 @@
 @synthesize guessButton;
 @synthesize resetButton;
 @synthesize expertButton;
+@synthesize encapsulateGuess;
 
 - (void) drawRect:(CGRect) dirtyRect
 {
@@ -33,21 +34,25 @@
     [[self.blank_text layer] setBorderColor:[[UIColor grayColor] CGColor]];
     [[self.blank_text layer] setBorderWidth:2.3];
     [[self.blank_text layer] setCornerRadius:15];
-    [[self.guess_text layer] setBorderColor:[[UIColor grayColor] CGColor]];
-    [[self.guess_text layer] setBorderWidth:2.3];
+    //[[self.guess_text layer] setBorderColor:[[UIColor grayColor] CGColor]];
+    //[[self.guess_text layer] setBorderWidth:2.3];
     [[self.guess_text layer] setCornerRadius:15];
     [[self.missed_text layer] setBorderColor:[[UIColor grayColor] CGColor]];
     [[self.missed_text layer] setBorderWidth:2.3];
     [[self.missed_text layer] setCornerRadius:15];
-    [[guessButton layer] setBorderColor:[UIColor grayColor].CGColor];
-    [[guessButton layer] setBorderWidth:2.3];
-    [[guessButton layer] setCornerRadius:15];
+    //[[guessButton layer] setBorderColor:[UIColor grayColor].CGColor];
+    //[[guessButton layer] setBorderWidth:2.3];
+    //[[guessButton layer] setCornerRadius:15];
     [[resetButton layer] setBorderColor:[UIColor grayColor].CGColor];
     [[resetButton layer] setBorderWidth:2.3];
     [[resetButton layer] setCornerRadius:15];
     [[expertButton layer] setBorderColor:[UIColor grayColor].CGColor];
     [[expertButton layer] setBorderWidth:2.3];
     [[expertButton layer] setCornerRadius:15];
+    [[encapsulateGuess layer] setBorderColor:[UIColor grayColor].CGColor];
+    [[encapsulateGuess layer] setBorderWidth:2.3];
+    [[encapsulateGuess layer] setCornerRadius:15];
+
     
 }
 
@@ -58,10 +63,4 @@
     [missed_text setText:@""];
 }
 
-
-- (BOOL)textFieldShouldReturn:(UITextView *)textView
-{
-    [textView resignFirstResponder];
-    return NO;
-}
 @end

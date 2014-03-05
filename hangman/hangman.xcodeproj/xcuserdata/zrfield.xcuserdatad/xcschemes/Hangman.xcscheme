@@ -17,7 +17,7 @@
                BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
                BuildableName = "Hangman.app"
                BlueprintName = "Hangman"
-               ReferencedContainer = "container:Hangman.xcodeproj">
+               ReferencedContainer = "container:hangman.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "BD1BF88218C74C8A00328741"
                BuildableName = "HangmanTests.xctest"
                BlueprintName = "HangmanTests"
-               ReferencedContainer = "container:Hangman.xcodeproj">
+               ReferencedContainer = "container:hangman.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
             BuildableName = "Hangman.app"
             BlueprintName = "Hangman"
-            ReferencedContainer = "container:Hangman.xcodeproj">
+            ReferencedContainer = "container:hangman.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
             BuildableName = "Hangman.app"
             BlueprintName = "Hangman"
-            ReferencedContainer = "container:Hangman.xcodeproj">
+            ReferencedContainer = "container:hangman.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "BD1BF85E18C74C8A00328741"
             BuildableName = "Hangman.app"
             BlueprintName = "Hangman"
-            ReferencedContainer = "container:Hangman.xcodeproj">
+            ReferencedContainer = "container:hangman.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

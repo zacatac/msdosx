@@ -182,11 +182,6 @@
     [[_HangmanView missed_text] setText:out_string];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [self guessButtonPressed:[_HangmanView guessButton]];
-    return YES;
-}
-
 
 
 @end
